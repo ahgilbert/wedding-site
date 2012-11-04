@@ -1,5 +1,9 @@
+/*div {border: 1px solid red}*/
+
 h1 {color:#18540c; font-size:24px}
-.textblock {color:#a5d0a3; font-size:16px}
+.textblock {width: 60%; color:#18540c; font-size:16px}
 body {background-color:#f7f8d8}
 a:link {color:inherit; text-decoration:underline;}
 a:visited {color:inherit; text-decoration:underline;}
+#nav {positon:relative; float:left}
+#main {position:relative; float:left; margin: 0px 0px 0px 20px}
