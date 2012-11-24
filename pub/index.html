@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <script src="jquery-1.8.3.min.js"></script>
+    <script src="wedding.js"></script>
     <link rel="stylesheet" type="text/css" href="dev.css">
     <title>Mary and Alan are getting married!</title>
   </head>
@@ -15,7 +17,7 @@
     </div>
     <div id='main'>
       <h1>Mary Orwig and Alan Gilbert are getting married!</h1>
-      <p><img src="img/ma0.jpg" title="On a hike on a beautiful day" alt="A picture of us looking lovely"></p>
+      <p><img id="coverPic" src="img/ma0.jpg" title="" alt=""></p>
       <p class="textblock">
 	We're getting married at <a href="https://maps.google.com/maps?q=belle+isle+state+park&hl=en&ll=37.753344,-76.59668&spn=20.455158,39.506836&sll=37.468228,-77.53386&sspn=0.973329,2.113495&hq=belle+isle+state+park&t=p&z=5">Belle Isle State Park</a> on May 25, 2013. We'd love for you to be there.
       </p>
@@ -23,5 +25,11 @@
 	Keep checking back here, and we'll keep you updated.
       </p>
     </div>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        var testArray =[["img/ma0.jpg", "on a hike"], ["img/ma1.jpg", "by the water's edge"]];
+        alterElementWithRandomArrayElement("#coverPic", testArray);
+      });
+    </script>
   </body>
 </html>
