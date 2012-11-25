@@ -1,19 +1,26 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <script src="jquery-1.8.3.min.js"></script>
+    <script src="wedding.js"></script>
     <link rel="stylesheet" type="text/css" href="dev.css">
     <title>The Ceremony</title>
   </head>
   <body>
     <div class="textblock">
       <p>We're getting married at <a href="https://maps.google.com/maps?q=belle+isle+state+park&hl=en&ll=37.753344,-76.59668&spn=20.455158,39.506836&sll=37.468228,-77.53386&sspn=0.973329,2.113495&hq=belle+isle+state+park&t=p&z=5">Belle Isle State Park</a> on May 25, 2013. The Ceremony will start at 4:30 PM.</p>
-      <img id="belleIslePhotos" src="img/bi0.jpg">
-      <img id="belleIslePhotos" src="img/bi1.jpg">
-      <img id="belleIslePhotos" src="img/bi2.jpg">
-      <img id="belleIslePhotos" src="img/bi3.jpg">
-      <img id="belleIslePhotos" src="img/bi4.jpg">
-      <img id="belleIslePhotos" src="img/bi5.jpg">
-      <img id="belleIslePhotos" src="img/bi6.jpg">
+      <img id="belleIslePhoto" src="img/bi0.jpg">
     </div>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        var imgData =[["img/bi0.jpg", "Some geese check out the lawn"], 
+        ["img/bi1.jpg", "The main house"],
+        ["img/bi2.jpg", "The main house, as seen from the lawn"],
+        ["img/bi3.jpg", "It's a beautiful place for a walk"],
+        ["img/bi5.jpg", "The view from the lawn"],
+        ["img/bi6.jpg", "The veiw from the lawn"]];
+        alterElementWithRandomArrayElement("#belleIslePhoto", imgData);
+      });
+    </script>
   </body>
 </html>

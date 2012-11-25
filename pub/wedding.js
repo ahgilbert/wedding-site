@@ -5,6 +5,11 @@ function alterElementWithArray(elementId, array){
 }
 
 function alterElementWithRandomArrayElement(elementId, array){
-    var newContents = array[Math.floor(Math.random() * array.length)];
+    console.log(array.length);
+    var randomInt = Math.floor(Math.random() * array.length);
+    console.log(randomInt);
+    var newContents = array[randomInt];
+    console.log(newContents[0]);
+    console.log(newContents[1]);
     alterElementWithArray(elementId, newContents);
 }

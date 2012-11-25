@@ -1,13 +1,23 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <script src="jquery-1.8.3.min.js"></script>
+    <script src="wedding.js"></script>
     <link rel="stylesheet" type="text/css" href="dev.css">
     <title>The Party</title>
   </head>
   <body>
     <div class="textblock">
       <p>The reception will be held at <a href="https://maps.google.com/maps?saddr=Belle+Isle+State+Park,+1632+Belle+Isle+Rd.,+Lancaster,+Virginia&daddr=37.857609,+-76.355136&hl=en&ll=37.806529,-76.473083&spn=0.640159,1.234589&sll=37.857617,-76.355147&sspn=0.002499,0.004823&geocode=Fbh1QAIdhjVv-yGtEx68yM4b2ildAf78lq6wiTGtEx68yM4b2g%3BFUmpQQIdwOly-w&oq=Belle+&t=m&mra=ls&z=10">The River House</a> on the other side of the Northern Neck.</p>
-	<img id="belleIslePhotos" src="img/rec0.jpg">
+	<img id="recImg" src="img/rec0.jpg">
     </div>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        var imgData =[["img/rec0.jpg", "Looking over the dock"], 
+        ["img/rec1.jpg", "Looking towards the water"],
+        ["img/rec2.jpg", "Looking towards the dock"]];
+        alterElementWithRandomArrayElement("#recImg", imgData);
+      });
+    </script>
   </body>
 </html>
